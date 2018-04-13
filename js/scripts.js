@@ -60,7 +60,7 @@ setGameElements();
 function newGame() {
   
   player.name = prompt('Please enter your name', 'imię gracza');
-  if (player.name != "") {
+  if (player.name != null && player.name !='') {
     
     
     player.score = 0;
@@ -135,15 +135,6 @@ function checkWinner() {
         setGameElements();   
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
