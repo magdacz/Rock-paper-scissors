@@ -33,6 +33,7 @@ h3 {
 
 #js-playerPickElement .btn {
     transition: .5s;
+    outline: none;
 }
 
 #js-playerPickElement .btn:hover {
