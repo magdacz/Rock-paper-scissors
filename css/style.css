@@ -34,18 +34,22 @@ h3 {
 } 
 
 #js-playerPickElement .btn {
-    transition: .5s;
     outline: none;
     border: none;
-}
-
-#js-playerPickElement .btn:hover {
-    transform: scale(1.1);
 }
 
 .rock-scissors i {
     font-size: 10vh;
     padding: 0 20px 30px 20px
+}
+
+#js-playerPick_rock, #js-playerPick_paper, #js-playerPick_scissors {
+    transition: .6s;
+}
+
+#js-playerPick_rock:hover, #js-playerPick_paper:hover, #js-playerPick_scissors:hover {
+    color: white;
+    background: #333;
 }
 
 #js-playerPick_paper .badge {
