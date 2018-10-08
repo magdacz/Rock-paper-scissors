@@ -1,19 +1,18 @@
 //REFERENCJE DO HTML-a
-var newGameBtn = document.getElementById('js-newGameButton');
-var pickRock = document.getElementById('js-playerPick_rock'),
-     pickPaper = document.getElementById('js-playerPick_paper'),
-     pickScissors = document.getElementById('js-playerPick_scissors');
-var playerPointsElem = document.getElementById('js-playerPoints'),
-    playerNameElem = document.getElementById('js-playerName'),
-    computerPointsElem = document.getElementById('js-computerPoints');
-var newGameElem = document.getElementById('js-newGameElement'),
-    pickElem = document.getElementById('js-playerPickElement'),
-    resultsElem = document.getElementById('js-resultsTableElement');
-var playerPickElem = document.getElementById('js-playerPick'),
-    computerPickElem = document.getElementById('js-computerPick'),
-    playerResultElem = document.getElementById('js-playerResult'),
-    computerResultElem = document.getElementById('js-computerResult');
-
+var newGameBtn = document.querySelector('#js-newGameButton'),
+    pickRock = document.querySelector('#js-playerPick_rock'),
+    pickPaper = document.querySelector('#js-playerPick_paper'),
+    pickScissors = document.querySelector('#js-playerPick_scissors'),
+    newGameElem = document.querySelector('#js-newGameElement'),
+    pickElem = document.querySelector('#js-playerPickElement'),
+    resultsElem = document.querySelector('#js-resultsTableElement'),
+    playerPointsElem = document.querySelector('#js-playerPoints'),
+    playerNameElem = document.querySelector('#js-playerName'),
+    computerPointsElem = document.querySelector('#js-computerPoints'),
+    playerPickElem = document.querySelector('#js-playerPick'),
+    computerPickElem = document.querySelector('#js-computerPick'),
+    playerResultElem = document.querySelector('#js-playerResult'),
+    computerResultElem = document.querySelector('#js-computerResult');
 //NASŁUCHIWACZE
 newGameBtn.addEventListener('click', newGame);
 pickRock.addEventListener('click', function() { playerPick('rock') });
